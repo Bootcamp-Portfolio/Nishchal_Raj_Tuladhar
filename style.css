@@ -1,98 +1,84 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-*{
+/* Reset default margin and padding for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-body{
-  
-    color: #000000;
-    font-weight: 600;
+
+body {
+    line-height: 1.6;
+    color: #333;
 }
-.header1{
-    padding: 15px;
-    background: transparent;
+
+.header {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
     display: flex;
-    position: fixed;
-}
-.header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 130px 1%;
-    background: transparent;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    
 }
 
-.navbar a{
-    font-size: 23px;
-    color: rgb(9, 149, 249);
+.logo img {
+    display: block;
+
+}
+
+.navbar a {
+    margin-right: 15px;
     text-decoration: none;
-    font-weight: 1000;
-    margin-left: 35px;
-    transition: .3s;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00abf0;
 
 }
-.navbar a:hover {
-    color: #000000;
-}
-.home{
-    height: 100vh;
+
+.home {
+    height: 90vh;
     background: url('op.jpg') no-repeat;
-    background-image: cover;
+    background-size: cover;
     display: flex;
     align-items: center;
-    padding: 0 4%;
+}
 
+.home-content {
+    max-width: 500px;
+    margin-left: 10%;
+    color:black;
 }
-.home-content{
-   max-width: 450px;
-   
-}
-.home-content h1{
+
+.home-content h1 {
     font-size: 50px;
     font-weight: 700;
-    line-height: 1.2;
-
-}
-.home-content h3{
-    font-size: 32px;
-    font-weight: 700;
-    color: #00abf0;
+    margin-bottom: 20px;
 }
 
-.home-content p{
-    font-size: 16px;
-    margin: 20px 0 40px;
+.home-content p {
+    max-width:70%;
+    font-size: 20px;
+    margin-top:80px;
+    margin-bottom: 30px;
+
 }
-.home-content .btn-box{
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
+
 .btn-box a{
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 100%;
+    height: 50px;
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
     font-size: 19px;
     color: #081b29;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
@@ -101,6 +87,7 @@ body{
 .btn-box a:hover{
     background: transparent;
     color: #000000;
+    border-color:white;
 }
 
 .btn-box a:nth-child(2)
@@ -110,6 +97,7 @@ body{
 }
 .btn-box a:nth-child(2):hover{
     color: #081b29;
+    border-color: #00abf0;;
 }
 .btn-box a:nth-child(2)::before{
     background: #00abf0;
@@ -121,7 +109,6 @@ body{
     left: 0;
     width: 0;
     height: 100%;
-   
     z-index: -1;
     transition: .5s;
 }
@@ -130,7 +117,9 @@ body{
     width: 100%;
 }
 .home-sci{
+    margin-left: 80%;
     position: absolute;
+
     bottom: 40px;
     width: 220px;
     display: flex;
@@ -144,10 +133,10 @@ body{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid#00abf0;
+    border: 2px solid black;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: black;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -169,7 +158,5 @@ body{
     transition: .5s;
 }
 .home-sci a:hover::before{
-
     width: 100%;
-
 }
